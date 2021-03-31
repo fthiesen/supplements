@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernanda Thiesen - Project 1 - Supplements Price Comparison</title>
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="container">
+
+            <header>
+                <h1>Supplements Price Comparison</h1>
+            </header>
+
+            <section id="left">
+
+                <h2>Calculator</h2>
+
+                <p>Please enter information of liquid supplements below to compare their prices.</p>
+
+                <form action="">
+
+                        <label for="brand" class="sr-only">Brand</label>
+                        <input type="text" name="brand" id="brand" placeholder="Brand">
+
+                        <label for="price" class="sr-only">Price</label>
+                        <input type="text" name="price" id="price" placeholder="Price">
+                        
+                        <label for="volume" class="sr-only">Total Volume</label>
+                        <input type="text" name="volume" id="volume" placeholder="Volume (ml)">
+
+                        <label for="serving" class="sr-only">Serving Size</label>
+                        <input type="text" name="serving" id="serving" placeholder="Serving Size (ml)">
+                        
+                        <label for="amount" class="sr-only">Amount per Serving</label>
+                        <input type="text" name="amount" id="amount" placeholder="Amount per Serving (mg)">
+                        
+                        <input type="submit" value="Add Supplement">
+
+                </form> 
+            
+            </section>
+
+            <section id="right">
+
+                    <h2>Supplements</h2>
+
+                    <div class="supplements">
+                        <!-- supplements added display here -->
+                    </div>
+
+                    <div class="buttons">
+                        <!-- calculate and reset buttons display here -->
+                    </div>
+
+            </section>
+
+            <footer>
+                <p>Created at Juno College</p>
+            </footer>
+
+        </div>
+        <!-- end of container -->
+
+    </div>
+    <!-- end of wrapper -->
+
+    <!-- popup -->
+    <div id="overlay" class="hidden"></div>
+    <div id="popup" class="hidden">
+        <!-- Results show in here -->
+    </div>
+
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
